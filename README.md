@@ -24,13 +24,13 @@ This procedure is for install LightDM and DWM on Planet Gemini computer (tested 
 </ul>
 
 Here you can see the desktop, on top at left, you have 2 workspaces; at right the status bar with lan, battery, audio and time informations.
-desktop.png
+![desktop](https://raw.githubusercontent.com/yannclement/gnde/master/dwm_desktop.png)
 
 Here you can see Chromium on worksape 2:
-chrome.png
+![chrome](https://raw.githubusercontent.com/yannclement/gnde/master/dwm_chrome.png)
 
 Here it's the terminal Konsole with application launcher Rofi:
-terminam_rofi.png
+![terminal and rofi](https://raw.githubusercontent.com/yannclement/gnde/master/dwm_terminal_rofi.png)
 
 In bonus:
 <ul>
