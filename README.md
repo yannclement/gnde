@@ -51,7 +51,8 @@ In bonus:
 For bad things:
 Special functions (volume, brightness and other) with FN key not works but special characters works with no problem.
 
-Various information:
+
+<h2>Various informations:</h2>
 All commands prefixed by a $ can be launched in user;
 All commands prefixed by a # must be launched in root.
 
