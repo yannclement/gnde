@@ -97,12 +97,12 @@ If LibreOffice is broken:
 # apt install git
 </pre>
 
-Download there files:
-- config.h
-- autostart_blocking.sh
-- backlight.sh
-- status.sh
-- moon.jpg
+Download there necessary file:
+<pre>
+$ cd ~
+$ git clone https://github.com/yannclement.com/gnde.git
+</pre>
+
 
 <h2>Install LightDM:</h2>
 First, remove SDDM:
@@ -125,9 +125,11 @@ If Connman loose Wifi:
 <pre>
 # apt install make gcc libx11-dev libxft-dev libxinerama-dev
 $ git clone git://git.suckless.org/dwm
-$ mv config.h dwm
+$ cp gnde/config.h dwm
 $ cd dwm
 </pre>
+
+> Si vous êtes Français avec un clavier AZERTY, modifiez le fichier config.h tel qu'indiqué dans celui-ci pour bénéficier d'un fonctionnement correcte des touches 1 à 9.
 
 Add autostart patch:
 <pre>
@@ -149,19 +151,19 @@ $ mkdir .dwm
 
 Configure autostart:
 <pre>
-$ mv autostart_blocking.sh .dwm
+$ cp gnde/autostart_blocking.sh .dwm
 $ chroot +x .dwm/autostart_blocking.sh
 </pre>
 
 Configure backlight:
 <pre>
-$ mv backlight.sh .dwm
+$ cp gnde/backlight.sh .dwm
 $ chroot +x .dwm/backlight.sh
 </pre>
 
 Configure status:
 <pre>
-$ mv status.sh .dwm
+$ cp gnde/status.sh .dwm
 $ chroot +x .dwm/status.sh
 </pre>
 
@@ -199,7 +201,7 @@ Add some applications to complete:
 Create a subdirectory wallpapers in ~/Pictures and copy there your favorite wallpapers:
 <pre>
 $ mkdir Pictures/wallpapers
-$ mv moon.jpg Pictures/wallpapers
+$ cp gnde/moon.jpg Pictures/wallpapers
 </pre>
 
 Reboot
