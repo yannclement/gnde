@@ -1,6 +1,11 @@
 <h1>GNDE: Gemini New Debian Experience</h1>
 
+
 <h2>Description:</h2>
+<p>Debian on Planet's Gemini computer is great but in my opinion, a taskbar as well as overlapping windows is not a good thing for such a small screen. In addition, the Gemini has the great advantage of having a real keyboard, it must be used.</p>
+
+<p>So I tried to get closer to the use of a smartphone, with windows that appear on the entire screen without overlapping and that we switch one behind the other without a taskbar but with effective keyboard shortcuts. All with an auto login so you do not waste time on startup.</p>
+
 This procedure is for install LightDM and DWM on Planet Gemini computer (tested on wifi only model) for a new user experience, namely:
 <ul>
   <li>auto login as gemini user;</li>
@@ -53,9 +58,9 @@ Special functions (volume, brightness and other) with FN key not works but speci
 
 
 <h2>Various informations:</h2>
-All commands prefixed by a $ can be launched in user;
+All commands prefixed by a $ can be launched in user;<br />
 All commands prefixed by a # must be launched in root.
-
+<br />
 Sorry for my english, it's not my native language.
 
 
