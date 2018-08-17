@@ -28,7 +28,7 @@ This procedure is for install LightDM and DWM on Planet Gemini computer (tested 
     ALT + P : Rofi applications launcher</li>
 </ul>
 
-Here you can see the desktop, on top at left, you have 2 workspaces; at right the status bar with lan, battery, audio and time informations.
+Here you can see the desktop, on top at left, you have 2 workspaces; at right the status bar with lan, battery, audio and time informations:
 ![desktop](https://raw.githubusercontent.com/yannclement/gnde/master/dwm_desktop.png)
 
 Here you can see Chromium on workspace 1:
@@ -44,11 +44,11 @@ In bonus:
   <li>brightness keys works:<br />
   ALT + CTRL +  B : brightness -<br />
   ALT + CTRL +  N : brightness +</li>
-  <li>audio volume keys works;<br />
+  <li>audio volume keys works:<br />
   ALT + CTRL +  X : mute<br />
   ALT + CTRL +  C : volume -<br />
   ALT + CTRL +  V : volume +</li>
-  <li>shortkeys to reboot and shutdown (imediately):<br />
+  <li>shortkeys to reboot and shutdown (immediately):<br />
   ALT + CTRL +  S : shutdown<br />
   ALT + CTRL +  R : reboot</li>
 </ul>
