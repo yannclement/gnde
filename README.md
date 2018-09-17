@@ -158,19 +158,19 @@ $ mkdir .dwm
 Configure autostart:
 <pre>
 $ cp gnde/autostart_blocking.sh .dwm
-$ chroot +x .dwm/autostart_blocking.sh
+$ chmod +x .dwm/autostart_blocking.sh
 </pre>
 
 Configure backlight:
 <pre>
 $ cp gnde/backlight.sh .dwm
-$ chroot +x .dwm/backlight.sh
+$ chmod +x .dwm/backlight.sh
 </pre>
 
 Configure status:
 <pre>
 $ cp gnde/status.sh .dwm
-$ chroot +x .dwm/status.sh
+$ chmod +x .dwm/status.sh
 </pre>
 
 Modify your Xsession for LightDM by creating a new .xsession file:
