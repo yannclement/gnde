@@ -46,6 +46,7 @@ static const Layout layouts[] = {
 
 /* key definitions */
 #define MODKEY Mod1Mask
+#define FUNCKEY Mod5Mask
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
@@ -68,8 +69,8 @@ static const char *shutdown[] = { "sudo", "shutdown", "-h", "now", NULL };
 static const char *reboot[] = { "sudo", "shutdown", "-r", "now", NULL };
 static const char *www[] = { "/usr/bin/chromium", NULL };
 static const char *mixer[] = { "/usr/bin/pavucontrol-qt", NULL };
-static const char *calc[] = { "/usr/bin/libreoffice", "--calc", NULL };
-static const char *writer[] = { "/usr/bin/libreoffice", "--writer", NULL };
+static const char *calc[] = { "/usr/bin/gnumeric", NULL };
+static const char *writer[] = { "/usr/bin/abiword", NULL };
 static const char *image[] = { "/usr/bin/lximage-qt", NULL };
 static const char *screenshot[] = { "/usr/bin/lximage-qt", "--screenshot", NULL };
 static const char *file[] = { "/usr/bin/pcmanfm-qt", NULL };
@@ -102,15 +103,16 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 
 
-    TAGKEYS(                      XK_1,                      0)
-    TAGKEYS(                      XK_2,                      1)
-    TAGKEYS(                      XK_3,                      2)
-    TAGKEYS(                      XK_4,                      3)
-    TAGKEYS(                      XK_5,                      4)
-    TAGKEYS(                      XK_6,                      5)
-    TAGKEYS(                      XK_7,                      6)
-    TAGKEYS(                      XK_8,                      7)
-    TAGKEYS(                      XK_9,                      8)
+        TAGKEYS(                      XK_1,                      0)
+        TAGKEYS(                      XK_2,                      1)
+        TAGKEYS(                      XK_3,                      2)
+        TAGKEYS(                      XK_4,                      3)
+        TAGKEYS(                      XK_5,                      4)
+        TAGKEYS(                      XK_6,                      5)
+        TAGKEYS(                      XK_7,                      6)
+        TAGKEYS(                      XK_8,                      7)
+        TAGKEYS(                      XK_9,                      8)
+
 
 /* Pour les Français, remplacez les lignes de codes précédentes par celles-ci pour avoir un fonctionnement correcte des touches 1 à 9
 	TAGKEYS(                        0x26,                      0)
@@ -124,13 +126,14 @@ static Key keys[] = {
 	TAGKEYS(                        0xe7,                      8)
 */
 
-	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
-  { MODKEY|ControlMask,           XK_v,      spawn,          {.v = pulseup } },
-  { MODKEY|ControlMask,           XK_c,      spawn,          {.v = pulsedown } },
-  { MODKEY|ControlMask,           XK_x,      spawn,          {.v = mute } },
-  { MODKEY|ControlMask,           XK_b,      spawn,          {.v = brightdown } },
-  { MODKEY|ControlMask,           XK_n,      spawn,          {.v = brightup } },
-  { MODKEY|ControlMask,           XK_s,      spawn,          {.v = shutdown } },
+
+  { MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
+  { FUNCKEY,                      XK_v,      spawn,          {.v = pulseup } },
+  { FUNCKEY,                      XK_c,      spawn,          {.v = pulsedown } },
+  { MODKEY|ControlMask,           XK_m,      spawn,          {.v = mute } },
+  { FUNCKEY,                      XK_b,      spawn,          {.v = brightdown } },
+  { FUNCKEY,                      XK_n,      spawn,          {.v = brightup } },
+  { FUNCKEY,                      XK_Escape, spawn,          {.v = shutdown } },
   { MODKEY|ControlMask,           XK_r,      spawn,          {.v = reboot } },
   { MODKEY|ShiftMask,             XK_q,      quit,           {0} },
   { MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
