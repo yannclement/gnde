@@ -42,20 +42,16 @@ In bonus:
   <li>battery level works;</li>
   <li>wifi works;</li>
   <li>brightness keys works:<br />
-  ALT + CTRL +  B : brightness -<br />
-  ALT + CTRL +  N : brightness +</li>
+  Fn +  B : brightness -<br />
+  Fn +  N : brightness +</li>
   <li>audio volume keys works:<br />
-  ALT + CTRL +  X : mute<br />
-  ALT + CTRL +  C : volume -<br />
-  ALT + CTRL +  V : volume +</li>
+  ALT + CTRL +  M : mute<br />
+  Fn +  C : volume -<br />
+  Fn +  V : volume +</li>
   <li>shortkeys to reboot and shutdown (immediately):<br />
-  ALT + CTRL +  S : shutdown<br />
+  Fn +  S : shutdown<br />
   ALT + CTRL +  R : reboot</li>
 </ul>
-
-For bad things:
-Special functions (volume, brightness and other) with FN key not works but special characters works with no problem.
-
 
 <h2>Various informations:</h2>
 All commands prefixed by a $ can be launched in user;<br />
